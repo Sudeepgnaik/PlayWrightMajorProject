@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
      
         Admin adminPage = new Admin(page);
         
-        String employeeName = "joker john selvam";
+        String employeeName = "Minh Thi Nguyen";
         String newUsername = "sudeep50555";
         String newPassword = "Jellyfish@123";
         String confirmPassword = "Jellyfish@123";
