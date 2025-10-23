@@ -11,7 +11,6 @@ import com.pages.SearchPage;
 public class LoginTest extends BaseTest {
 	@Test
     public void testValidLogin() throws InterruptedException {
-        // Initialize page objects with Playwright's Page
         LoginPage loginPage = new LoginPage(page);
         loginPage.login("Admin", "admin123");
 

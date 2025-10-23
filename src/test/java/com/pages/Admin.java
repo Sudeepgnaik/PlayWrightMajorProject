@@ -46,7 +46,7 @@ public class Admin {
     	userRoleDropdown.click();
         page.locator("//div[@role='listbox']//span[text()='Admin']").click();
         employeeNameInput.fill(empName);
-        page.locator("//div[@role='listbox']//span[contains(text(),'" + empName + "')]").click();
+        page.locator("//div[@role='listbox']//span[contains(text(),'joker john selvam')]").click();
         usernameInput.fill(username);
         statusDropdown.click();
         page.locator("//div[@role='listbox']//span[text()='Enabled']").click();
