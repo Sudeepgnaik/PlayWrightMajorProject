@@ -9,7 +9,7 @@
 
 
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="chromium"/>
+
     <classes>
       <class name="com.test.LoginTest"/>
     </classes>
