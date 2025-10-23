@@ -4,6 +4,7 @@
   <parameter name="browser" value="chromium"/>
   <listeners>
     <listener class-name="com.utilities.ExcelListener"/>
+    <listener class-name="com.utilities.CSVReporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
