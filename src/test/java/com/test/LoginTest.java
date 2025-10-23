@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest {
         Admin adminPage = new Admin(page);
         
         String employeeName = "joker john selvam";
-        String newUsername = "sudeep555";
+        String newUsername = "sudeep5555";
         String newPassword = "Jellyfish@123";
         String confirmPassword = "Jellyfish@123";
         String userRole = "Admin";
@@ -27,12 +27,12 @@ public class LoginTest extends BaseTest {
  
         adminPage.admininput(employeeName, newUsername, newPassword, confirmPassword, userRole, status);
         SearchPage searchPage = new SearchPage(page);
-        searchPage.searchUser("sudeep000", "Admin", "Enabled");
+        searchPage.searchUser("sudeep0001", "Admin", "Enabled");
         EditUserPage editUserPage = new EditUserPage(page);
         editUserPage.editUserStatus("Disabled");
         searchPage.searchUser(newUsername, userRole, "Disabled");
 
-        // Step 6: Delete the user
+     
         DeleteUserPage deleteUserPage = new DeleteUserPage(page);
         deleteUserPage.deleteUser();
 
