@@ -20,7 +20,7 @@ public class BaseTest {
 
     @BeforeMethod
     @Parameters("browser")
-    public void setUp(String browserName) {
+    public void setUp(@Optional("chromium") String browserName) {
         // ✅ Load config inside setup method
         baseUrl = configuration.readPropertyFileData("baseUrl", "config");
         userName = configuration.readPropertyFileData("userName", "config");
